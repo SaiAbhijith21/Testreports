@@ -133,7 +133,7 @@ Elastic cache: It is a high speed in 	memory DB that can store ever expanding da
 
 They are two types of migration in aws
 1. lift and shift - imports complete data automatically
-2. Dump based - Automatically create a dump collection of ddl + ddm queries  along with schema definition - Imports query based data to fetch the base data
+2. Dump based - Automatically create a dump collection of ddl + ddm queries  along with schema definition - Imports query based data to fetch the base datas
 
 
 
