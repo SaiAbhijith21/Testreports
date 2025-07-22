@@ -1,0 +1,139 @@
+NAT
+
+Public IP is dynamic in nature and it changes whenever we are stopping the servers and restarting it. 
+
+Hence to ensure we have a static IP address we have to Use elastic option and fix an ip address for the servers which is chargeable. Allocated to us and kept for us permanently till we are paying for it. 
+
+NAT mandatorily needs an elastic IP
+
+
+
+Peering connection
+
+This is required whenever 2 sub networks of different networks would like to communicate with each other through private IP address
+
+Both the networks should have non - overlapping CIDR for doing a peering connection
+ 
+
+Network security
+
+-Network access control list : Subnet based security
+-Security Group : Instance based security
+
+They are 2 times of traffic i.e. Outbound traffic & inbound traffic
+
+TCp: Transfer control protocol 1':Always waits for response
+RDP, HTTP, HTTPS, SSH, ETC
+
+UDP: User datagram protocol : Never waits for resp
+
+
+
+NACL: It is a subnet based network (Block or allow access of diff servers
+
+
+
+AMI: Amazon Machine image: It is a process of launching multiple instances at a time instead of relying/ doing it one after the after This is of 2 types 
+i) HVM: Hardware virtual Machines
+ii)PV: Paravirtualized machines
+
+Webservers are the sites which are static in nature (Fixed )
+app Servers are the sites which are dynamic in nature ( Keeps changing)
+
+
+Basics of Linux 
+ 
+Root folder is the main folder which carries multiple folders. Root folder is like a parent folder
+
+Commands
+cd<directory>: change the directory
+.exe in windows --> 	.sh in Linux
+zip in windows--> tar in Linux
+. : Current directory
+..: Parent directory
+ls: Show list ( files, folders) 
+ls-l: permissions
+
+
+Types of permissions in Linux
+1.Read-r-4
+2.Write-w-2 
+3.Execute-x-1
+
+mkdir<foldername> creates folder
+
+use cd to change directory, for example cd home/, cd folder1/, etc
+
+
+To write context in a  file in linx we have to use ( vi, nano, cat)
+to read always use cat
+
+Esc (key) :Wq (quit with saving)
+Esc (key) :q (quit without saving)
+Esc (key) :q! (quit forcefully)
+
+sudo useradd User1: Adds new user in the home of root
+passwed  user1: Assigns a password 
+
+Chmod 755 folder name: Changing permissions of the folder
+sudo su user1: Switches the user from user to user1
+sudo su: Will take you to root 
+sudo visduo: opens the sudoers file  where you can add the users
+sudo usermod -a -g wheel user2:  This adds the user inside a particular group
+
+
+
+Cloud watch: Monitor the various aws services
+SNS: Simple notification service: 
+
+
+AMI: Amazon machine image is  a master image for the creation of virtual servers, it is like a copy or image taken of an existing machine which can be used across multiple machines
+
+Loadbalancers: Act as a balancing machine when we have additional traffic on the website while our capability is lower than the incoming traffic
+
+ASG: Auto scaling groups: Automatically can launch servers/ reduce servers basis traffic
+
+
+ALB: application load balancer is a concept where  LB sends the traffic to the servers basis the urls 
+
+ex: one server will act for sign in an application, one server will act as payment gateway, etc 
+
+NL: Network load balancers: It is a port based routing. 
+
+Data base: Store values
+
+DNS: Domain name service
+1.DNS Management
+2. Availability management
+3. traffic management 
+
+
+S3: A bucket name should be unique in the entire aws network
+
+Versioning: Is used to capture the versions/changes made on the folder/files
+server access loggings: Helps us in tracking the logging request done by diff users
+static web hosting: Helps us in hosting a website through different files uploaded
+transfer acceleration: is used in transferring huge amount of data within internal systems
+Object level logging: Object level tracking
+
+
+Transcoders: Conversion of media files from one version to other like 720pp to 360pp (this is currently removed)
+
+Cloud front: Is a feature which helps in solving the latency issues by creating multiple serves across and infusing the same data in those servers, whenever user hits the ip cloud fronts fetches data from the nearest server and shares it with end users
+
+snowball: Is a process of transferring data from a physical center 
+
+
+Amazon redshift: 
+Amazon 
+
+Elastic cache: It is a high speed in 	memory DB that can store ever expanding data or ever lasting data
+
+
+
+They are two types of migration in aws
+1. lift and shift - imports complete data automatically
+2. Dump based - Automatically create a dump collection of ddl + ddm queries  along with schema definition - Imports query based data to fetch the base data
+
+
+
